@@ -2,7 +2,9 @@
 
 ## About
 
-ALC-currency-converter is a seven-days challenge project organized by [`Andela`](andela.com) in partnership with [`udacity`](udacity.com) and google Africa. ALC-currency-converter allow users to convert currency from different countries.
+ALC-currency-converter is a seven-days challenge project organized by [`Andela`](andela.com) in partnership with [`Udacity`](udacity.com) and Google Africa. ALC-currency-converter allow users to convert currency from different countries.
+
+Live Demo: [https://kensanni.github.io/ALC-currency-converter/](https://kensanni.github.io/ALC-currency-converter/)
 
 ## Technologies used
 This web-application is built with HTML5, CSS and Javascript.
@@ -14,4 +16,4 @@ This web-application is built with HTML5, CSS and Javascript.
 >- Offline access.
 
 ### How it works
-ALC-currency-converter is built with the intent of [`PWA(Progressive Web App)`](https://developers.google.com/web/progressive-web-apps/). It's offers better user experience to the user. When a user visits the application for the first time, it caches some data such as the styling and home page to provide a better experience for the user. A user must have performed a conversion on the web application in-order to make such convertion in an offline mode which is saved in the indexedDB.
+ALC-currency-converter is built with the intent of [`PWA(Progressive Web App)`](https://developers.google.com/web/progressive-web-apps/). It's offers better user experience to the user. When a user visits the application for the first time, it caches some data such as the styling and home page to provide a better experience for the user. A user must have performed a conversion on the web application in-order to make such conversion in an offline mode which is saved in the indexedDB.
