@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Currency converter</title>
+  </head>
+  <body>
+    <div class="container-fluid pl-5 pr-5">
+      <div class="row pb-5">
+        <div class="col-sm-12 pt-5">
+          <h1 style="color: white" class="text">Currency converter</h1>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6">
+
+          <div class="form-group">
+            <label for="exampleDropdownFormEmail2" class="text">Amount</label>
+            <input type="number" class="form-control text" style="border-radius: 21px" id="amount" placeholder="100">
+          </div>
+
+          <div class="form-group">
+            <label for="inputGroupSelect01" class="text">from</label>
+            <select class="custom-select text" style="border-radius: 21px" id="selectCurrencyFrom">
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="inputGroupSelect02" class="text">to</label>
+            <select class="custom-select text" style="border-radius: 21px" id="selectCurrencyTo">
+            </select>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-block btn-black mt-5 text" style="border-radius: 21px" id="submit">
+              CONVERT NOW
+            </button>
+          </div>
+
+        </div>
+
+        <div class="col-sm-4 offset-sm-2 remove">
+          <div class="rfloat">
+            <div class="rfloat">
+              <p class="currency text currency-amount" id="amountFrom"></p>
+              <p class="text-center currency-text"><small id="currencyFrom"></small></p>
+            </div>
+            <div>
+              <p class="currency text currency-sm" id="amountTo"></p>
+              <p class="text-center currency-text" id="currencyTo"></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row removed">
+        <div class="col-sm-12 pt-4">
+            <p class="currency text" style="margin-bottom: -2rem; color: black" id="smallDevice"></p>
+        </div>
+      </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="sw.js"></script>
+    <script src="convert.js"></script>
+  </body>
+</html>
