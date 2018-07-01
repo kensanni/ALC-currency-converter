@@ -159,7 +159,6 @@ class Converter {
   }
 
   static getALLCurrencies(getCurrencies) {
-    console.log(getCurrencies, 'nrjffjjd')
     fetch(getCurrencies).then(response => { return response.json() })
       .then(response => {
         const currencyId = Object.keys(response.results);
@@ -176,6 +175,10 @@ class Converter {
     const amount = amountElement.value
     const query = `${selectedFromValue}_${selectedToValue}`;
     const url = `https://free.currencyconverterapi.com/api/v5/convert?q=${query}&compact=y`
+
+    if (amount === '') {
+      return alert('Amount Field cannot be empty')
+    }
 
     fetch(url).then(response => { return response.json() })
       .then(response => {

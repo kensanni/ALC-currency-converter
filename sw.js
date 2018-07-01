@@ -1,5 +1,6 @@
 const cacheName = "Currency-converter";
 const cacheData = [
+  'images/bg.png',
   'index.html',
   'styles.css',
   'convert.js',
