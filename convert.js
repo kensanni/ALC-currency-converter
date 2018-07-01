@@ -14,6 +14,7 @@ const amountToElement = document.querySelector("#amountTo");
 const currenyFromElement = document.querySelector("#currencyFrom");
 const currencyToElement = document.querySelector("#currencyTo");
 const smallDevicesElement = document.querySelector("#smallDevice")
+
 // variable for assigning or re-assigning indexdb result
 let db;
 
@@ -79,8 +80,7 @@ class IndexedDB {
   /**
    * @description Get currencies exchange rate from the indexedDB for offline use
    */
-  static getData() {
-    console.log(data, "dddddddd")
+  static getData(data) {
     const openRequest = window.indexedDB.open('CurrencyConverter', 1);
 
     openRequest.onsuccess = (event) => {
@@ -182,8 +182,8 @@ class Converter {
         const symbol = response[query]
         const exchangeRate = response[query].val;
         const value = (amount * exchangeRate).toFixed(2);
-        // IndexedDB.initDb(query, response[query].val)
-        // IndexedDB.getData(query)
+        IndexedDB.initDb(query, response[query].val)
+        IndexedDB.getData(query)
         amountFromElement.innerHTML = amount
         amountToElement.innerHTML = value
         currenyFromElement.innerHTML = selectedFromValue
@@ -195,7 +195,7 @@ class Converter {
 
 
 
-// ServiceWorkers.registerServiceWorker();
+ServiceWorkers.registerServiceWorker();
 Converter.getALLCurrencies(getCurrencies);
 
 submitBtnElement.addEventListener("click", function (){

@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.main-color {
+  margin-bottom: -2rem;
+  color: #CC653B;
+}
+
+.sub-color {
+  color: #565656
+}
+
+.btn-black {
+  background-color: black;
+  color: #fff;
+}
+
+.text {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.rfloat {
+  float: right;
+}
+
+.currency {
+  font-size: 5rem;
+}
+
+@media (max-width: 767px) {
+  .remove {
+    display: none
+  }
+  .currency {
+    font-size: 3rem
+  }
+}
+
+@media (min-width: 768px) {
+  .removed {
+    display: none
+  }
+
+  .currency-text {
+    color: white
+  }
+}
+
+@media (min-width: 970px) {
+  .currency-amount {
+    color: #CC653B;
+    margin-bottom: -2rem;
+  }
+  .currency-text {
+    color: white
+  }
+
+  .currency-sm {
+    color: #DC6678
+  }
+}
+
